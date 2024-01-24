@@ -4,6 +4,8 @@ import 'package:asp/asp.dart';
 class LoginAtoms {
   final loginState = Atom<LoginState>(LoginInitial());
 
+  final doLogin = Atom.action();
+
   void dispose() {
     loginState.dispose();
   }
