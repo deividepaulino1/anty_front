@@ -3,6 +3,7 @@ import 'package:asp/asp.dart';
 
 class LoginAtoms {
   final loginState = Atom<LoginState>(LoginInitial());
+  final isChecked = Atom<bool>(false);
 
   final doLogin = Atom.action();
 
